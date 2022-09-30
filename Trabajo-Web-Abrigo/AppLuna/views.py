@@ -47,7 +47,7 @@ def gato(request):
 
             info = formulario.cleaned_data
 
-            gato = Gato(nombre=info["nombre"], raza=info["raza"], edad=info["edad"], sexo=["sexo"])
+            gato = Gato(nombre=info["nombre"], raza=info["raza"], edad=info["edad"], sexo=info["sexo"])
 
 
             gato.save()
@@ -75,7 +75,7 @@ def roedor(request):
 
             info = formulario.cleaned_data
 
-            roedor = Roedor(nombre=info["nombre"], raza=info["raza"], edad=info["edad"], sexo=["sexo"])
+            roedor = Roedor(nombre=info["nombre"], raza=info["raza"], edad=info["edad"], sexo=info["sexo"])
 
 
             roedor.save()
