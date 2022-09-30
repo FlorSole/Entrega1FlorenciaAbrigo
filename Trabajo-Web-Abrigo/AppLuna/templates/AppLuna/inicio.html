@@ -1,0 +1,41 @@
+{% extends "AppLuna/padre.html" %}
+
+
+{% load static %}
+
+
+{% block titulo %}
+
+Amores Peludos
+
+
+{% endblock %}
+
+{% block descripcion %} 
+
+<form action="/AppLuna/result/" method="GET">
+
+    <p> Ingrese nombre de la Mascota:</p>
+    
+    <input type="text" name="mascota" id="mascota">
+
+    <input type="submit" value="Buscar">
+
+</form>
+
+
+  
+
+    {%  if mascota  %}
+
+        Datos de: {{mascota.nombre}} <br>
+    
+
+        raza: {{mascota.raza}}<br>
+
+        sexo: {{mascota.sexo}}<br>
+        edad: {{mascota.edad}}<br>
+
+    {% endif %}
+{% endblock %}
+
