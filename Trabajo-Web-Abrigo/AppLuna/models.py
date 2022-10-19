@@ -7,6 +7,8 @@ from django.db import models
 
 class Dueno(models.Model):
 
+   
+
     nombre = models.CharField(max_length=60)
     edad = models.IntegerField()
     
@@ -15,6 +17,9 @@ class Dueno(models.Model):
 
 class Perro(models.Model):
 
+    
+
+
     nombre = models.CharField(max_length=60)
     raza = models.CharField(max_length=60)
     sexo = models.CharField(max_length=60)
@@ -22,12 +27,16 @@ class Perro(models.Model):
 
 class Gato(models.Model):
 
+  
+
     nombre = models.CharField(max_length=60)
     raza = models.CharField(max_length=60)
     sexo = models.CharField(max_length=60)
     edad = models.IntegerField()
 
 class Roedor(models.Model):
+
+    
 
     nombre = models.CharField(max_length=60)
     raza = models.CharField(max_length=60)
